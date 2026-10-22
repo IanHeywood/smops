@@ -23,6 +23,11 @@ History
 * Numerics split into ``smops.spectral`` (numpy only); added tests.
 * Packaging: fixed setup.cfg (long description files, licence file, pytest
   could not parse it), Python 3.9-3.13, updated CI to run tests.
+* Packaging moved to pyproject.toml (replacing setup.py and setup.cfg), with
+  an SPDX licence expression. Supported Python versions are now 3.10-3.14
+  (3.9 is end-of-life).
+* Makefile, CONTRIBUTING and MANIFEST.in updated for current tooling
+  (``python -m build``, ``pip install``, GitHub Actions and releases).
 
 0.1.7 (2023-04-07)
 ------------------
