@@ -67,6 +67,19 @@ Options
                                        band.
           -h, --help                   Show this message and exit.
 
+Checking the output
+-------------------
+
+``examples/plot_spectra.py`` plots the spectra of the brightest components in
+the smops output alongside the input sub-band values. It reads only the
+pixels it needs, so it works on very large output cubes. It needs
+matplotlib, which is not installed with smops:
+
+.. code-block:: bash
+
+        pip install matplotlib
+        python examples/plot_spectra.py -ip prefix-used-for-those-images -op smops-interp-model -n 6
+
 Tests
 -----
 
